@@ -3,11 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script>
+       <script>
         window.onload = function() {
-          window.location.href = "https://autopatchcn.yuanshen.com/client_app/download/Android/20241108184319_6NzQMQfgYmRRtnw5/mihoyo/yuanshen_5.2.0.apk";
+            // 第一次跳转，3秒后跳转到第一个目标网址
+            setTimeout(function() {
+                window.location.href = "https://autopatchcn.yuanshen.com/client_app/download/Android/20241108184319_6NzQMQfgYmRRtnw5/mihoyo/yuanshen_5.2.0.apk";
+            }, 500);
+            // 第二次跳转，在第一次跳转完又过了5秒后跳转到第二个目标网址
+            setTimeout(function() {
+                window.location.href = "https://ys.mihoyo.com/cloud/?utm_source=default#/";
+            }, 1500); 
         };
-      </script>
+    </script>
       <style>
         html,
         body {
